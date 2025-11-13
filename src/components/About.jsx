@@ -1,82 +1,69 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "../assets/css/AboutSection.css";
-import watchImg from "../assets/img/hero-img.jpg"; // use your actual image
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
-};
+import "../assets/css/About.css";
+import heroWatch from "../assets/img/hero-img.jpg"; // your hero image
 
 const AboutSection = () => {
   return (
-    <section className="about-section py-5 text-white" id="about">
-      <div className="container">
-        <div className="row align-items-center">
+    <section className="about-modern text-white" id="about">
+      <div className="container text-center">
 
-          {/* Image Side */}
-          <motion.div
-            className="col-lg-6 mb-4 mb-lg-0"
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <img
-              src={watchImg}
-              alt="Luxury Watch"
-              className="img-fluid rounded-4 shadow"
-            />
-          </motion.div>
+        {/* Heading */}
+        <motion.h2
+          className="display-4 fw-bold text-gold mb-4"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          Precision Meets Perfection
+        </motion.h2>
 
-          {/* Text Side */}
-          <motion.div
-            className="col-lg-6"
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <h2 className="fw-bold display-6 text-gold mb-3">
-              Timeless Elegance, Redefined
-            </h2>
-            <p className="lead text-light opacity-75 mb-4">
-              LUXTIME crafts timepieces that blend precision engineering with timeless design.
-              Each watch is a statement of sophistication — built for those who value both form and function.
-            </p>
+        {/* Subtitle */}
+        <motion.p
+          className="lead text-light mb-5 w-75 mx-auto"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          LUXTIME is more than a timepiece — it's a legacy.  
+          Crafted with Swiss precision, each design captures timeless elegance and modern engineering.
+        </motion.p>
 
-            <div className="row gy-3">
-              <motion.div className="col-6" variants={fadeUp}>
-                <h5 className="text-gold fw-bold">⚙️ Swiss Precision</h5>
-                <p className="small opacity-75">
-                  Crafted with meticulous attention for unmatched accuracy.
-                </p>
-              </motion.div>
+        {/* Image */}
+        <motion.div
+          className="image-wrapper mx-auto mb-5"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
+          <img src={heroWatch} alt="Luxury Watch" className="hero-watch" />
+        </motion.div>
 
-              <motion.div className="col-6" variants={fadeUp}>
-                <h5 className="text-gold fw-bold">💎 Premium Materials</h5>
-                <p className="small opacity-75">
-                  Made with sapphire glass and 316L stainless steel casing.
-                </p>
-              </motion.div>
-
-              <motion.div className="col-6" variants={fadeUp}>
-                <h5 className="text-gold fw-bold">🌊 Water Resistant</h5>
-                <p className="small opacity-75">
-                  Engineered to perform in every environment — elegance meets endurance.
-                </p>
-              </motion.div>
-
-              <motion.div className="col-6" variants={fadeUp}>
-                <h5 className="text-gold fw-bold">⌚ Limited Editions</h5>
-                <p className="small opacity-75">
-                  Each model is uniquely numbered for exclusive ownership.
-                </p>
-              </motion.div>
-            </div>
-          </motion.div>
-
+        {/* Feature Highlights */}
+        <div className="row justify-content-center">
+          {[
+            { title: "Swiss Movement", text: "Every second engineered for accuracy." },
+            { title: "Premium Craftsmanship", text: "Built with the world’s finest materials." },
+            { title: "Luxury Design", text: "Minimalism meets modern luxury aesthetics." },
+          ].map((feature, index) => (
+            <motion.div
+              className="col-md-3 col-10 feature"
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="divider mx-auto mb-3"></div>
+              <h5 className="text-gold fw-semibold">{feature.title}</h5>
+              <p className="text-light opacity-75">{feature.text}</p>
+            </motion.div>
+          ))}
         </div>
+
       </div>
     </section>
   );
