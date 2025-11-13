@@ -7,14 +7,14 @@ import logoImg from "../assets/img/logo.png";
 const Navbar = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-dark shadow-sm px-4 py-3" style={{backgroundColor:"black"}}>
+      <nav className="navbar navbar-expand-lg navbar-dark shadow-sm px-4 py-3" style={{backgroundColor:"black" }}>
         {/* Logo */}
         <a className="navbar-brand d-flex align-items-center fw-bold fs-3 text-white" href="#">
           <img
             src={logoImg}
             alt="Shopping Bag"
             width="130"
-            height="80"
+            height="70"
             className="me-2"
           />
           
@@ -45,13 +45,18 @@ const Navbar = () => {
             </li>
             <li className="nav-item mx-2">
               <a className="nav-link text-white" href="#services">
+                Products
+              </a>
+            </li>
+            <li className="nav-item mx-2">
+              <a className="nav-link text-white" href="#services">
                 Services
               </a>
             </li>
             <li className="nav-item ms-lg-3 mt-3 mt-lg-0">
               <div className="wrapper">
                 <button className="button">
-                  <span className="button-content">Download</span>
+                  <span className="button-content">Buy Now</span>
                 </button>
               </div>
             </li>
