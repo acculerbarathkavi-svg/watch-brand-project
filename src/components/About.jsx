@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../assets/css/About.css";
-import heroWatch from "../assets/img/hero-img.jpg"; // your hero image
+import aboutImg from "../assets/img/about-img.jpg"; 
 
 const AboutSection = () => {
   return (
@@ -16,8 +16,10 @@ const AboutSection = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
+        <div className="divider mx-auto mb-3"></div>
           Precision Meets Perfection
         </motion.h2>
+
 
         {/* Subtitle */}
         <motion.p
@@ -39,7 +41,7 @@ const AboutSection = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <img src={heroWatch} alt="Luxury Watch" className="  hero-watch" />
+          <img src={aboutImg} alt="Luxury Watch" className="  hero-watch" />
         </motion.div>
 
         {/* Feature Highlights */}

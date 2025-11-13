@@ -3,7 +3,9 @@ body {
 }
 /* Basic navbar tweaks */
 .navbar {
-  position: sticky;
+  position: fixed;
+  left: 0;
+  width: 100%;
   top: 0;
   z-index: 2000; 
   background-color: #000; 
