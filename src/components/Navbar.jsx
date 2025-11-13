@@ -40,7 +40,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item mx-2">
               <a className="nav-link text-white" href="#about">
-                About Us
+                About 
               </a>
             </li>
             <li className="nav-item mx-2">
