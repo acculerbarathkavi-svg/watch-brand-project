@@ -10,7 +10,7 @@ const AboutSection = () => {
 
         {/* Heading */}
         <motion.h2
-          className="display-4 fw-bold text-gold mb-4"
+          className="display-4 fw-bold text-gold mb-4 text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -39,7 +39,7 @@ const AboutSection = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          <img src={heroWatch} alt="Luxury Watch" className="hero-watch" />
+          <img src={heroWatch} alt="Luxury Watch" className="  hero-watch" />
         </motion.div>
 
         {/* Feature Highlights */}

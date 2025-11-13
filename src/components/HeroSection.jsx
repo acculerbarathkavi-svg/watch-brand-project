@@ -15,7 +15,9 @@ const HeroSection = () => {
               Discover craftsmanship and precision in every tick. Our watches
               redefine sophistication with enduring style and unmatched quality.
             </p>
-            <button className="btn btn-hero">Explore Collection</button>
+            
+            <button className="luxury-btn">Explore</button>
+
           </div>
           <div className="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
             <img
