@@ -2,22 +2,22 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "../assets/css/Navbar.css";
-import bagImg from "../assets/img/shopping-bag.png";
+import logoImg from "../assets/img/logo.png";
 
 const Navbar = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm px-4 py-3">
+      <nav className="navbar navbar-expand-lg navbar-dark shadow-sm px-4 py-3" style={{backgroundColor:"black"}}>
         {/* Logo */}
         <a className="navbar-brand d-flex align-items-center fw-bold fs-3 text-white" href="#">
           <img
-            src={bagImg}
+            src={logoImg}
             alt="Shopping Bag"
-            width="40"
-            height="40"
+            width="130"
+            height="80"
             className="me-2"
           />
-          MyBrand
+          
         </a>
 
         {/* Mobile Toggle */}
@@ -40,7 +40,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item mx-2">
               <a className="nav-link text-white" href="#about">
-                About 
+                About
               </a>
             </li>
             <li className="nav-item mx-2">
