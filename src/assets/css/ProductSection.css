@@ -1,0 +1,84 @@
+.product-section {
+  background-color: #0d0d0d;
+  color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d4af37;
+}
+
+.section-subtitle {
+  color: #ccc;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #111;
+  border-radius: 15px;
+  padding: 25px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+}
+
+.product-img-wrapper {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img-wrapper {
+  transform: scale(1.05);
+}
+
+.product-name {
+  color: #fff;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.product-price {
+  color: #d4af37;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.product-btn {
+  border: 2px solid #d4af37;
+  color: #d4af37;
+  background: transparent;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+
+.product-btn:hover {
+  background-color: #d4af37;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .product-card {
+    padding: 20px;
+  }
+
+  .product-btn {
+    padding: 8px 20px;
+  }
+}

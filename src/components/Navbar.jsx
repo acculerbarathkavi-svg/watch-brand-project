@@ -45,7 +45,7 @@
                 </a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link text-white" href="#services">
+                <a className="nav-link text-white" href="#products">
                   Products
                 </a>
               </li>
