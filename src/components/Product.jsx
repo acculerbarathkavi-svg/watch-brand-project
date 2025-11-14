@@ -13,8 +13,8 @@ const ProductSection = () => {
 
   return (
     <section className="product-section py-5" id="products">
-      <div className="container text-center">
-        <h2 className="section-title">Trending Now</h2>
+      <div className="container text-center" >
+        <h2 className="section-title" style={{paddingTop:"57px"}}>Trending Now</h2>
         <p className="section-subtitle">
           Discover our latest luxury timepieces designed for elegance, precision, and performance.
         </p>

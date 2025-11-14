@@ -5,6 +5,7 @@ import HeroSection from "./components/HeroSection";
 import About from "./components/About"
 import ProductSection from './components/Product';
 import Footer from './components/Footer';
+import Highlight from './components/Highlight';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <HeroSection/>
       <About/>
       <ProductSection/>
+      <Highlight/>
       <Footer/>
     </>
   )

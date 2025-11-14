@@ -1,34 +1,52 @@
 import React from "react";
 import "../assets/css/HeroSection.css";
 import heroImg from "../assets/img/hero-img.jpg"; // use your uploaded image path
+import highBg from "../assets/img/Artboard 1 elam.png";
 
 const HeroSection = () => {
   return (
-    <section className="hero d-flex align-items-center text-white" id="home">
-      <div className="container text-center text-lg-start">
-        <div className="row align-items-center">
-          <div className="col-lg-6 col-md-12 hero-text">
-            <h1 className="display-4 fw-bold mb-3">
-              Timeless Elegance for Modern You
-            </h1>
-            <p className="lead mb-4">
-              Discover craftsmanship and precision in every tick. Our watches
-              redefine sophistication with enduring style and unmatched quality.
-            </p>
+    // <section className="hero d-flex align-items-center text-white" id="home">
+    //   <div className="container text-center text-lg-start">
+    //     <div className="row align-items-center">
+    //       <div className="col-lg-6 col-md-12 hero-text">
+    //         <h1 className="display-4 fw-bold mb-3">
+    //           Timeless Elegance for Modern You
+    //         </h1>
+    //         <p className="lead mb-4">
+    //           Discover craftsmanship and precision in every tick. Our watches
+    //           redefine sophistication with enduring style and unmatched quality.
+    //         </p>
             
-            <button className="luxury-btn">Explore</button>
+    //         <button className="luxury-btn">Explore</button>
 
-          </div>
-          <div className="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
-            <img
-              src={heroImg}
-              alt="Luxury Watch"
-              className="img-fluid hero-watch"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+    //       </div>
+    //       <div className="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+    //         <img
+    //           src={heroImg}
+    //           alt="Luxury Watch"
+    //           className="img-fluid hero-watch"
+    //         />
+    //       </div>
+    //     </div>
+    //   </div>
+    // </section>
+    <section
+                    className="bg-hero-section"
+                    style={{ backgroundImage: `url(${highBg})` }}
+                >
+                    <div className="bg-hero-overlay">
+                        <div className="container">
+                            <div className="content-box">
+                                <h1 className="hero-title">Discover Timeless Luxury</h1>
+                                <p className="hero-subtitle">
+                                    Precision engineering meets iconic craftsmanship.
+                                </p>
+    
+                                <button className="hero-btn">Explore Collection</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
   );
 };
 

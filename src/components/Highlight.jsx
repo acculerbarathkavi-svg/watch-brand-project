@@ -1,0 +1,86 @@
+import React from "react";
+import "../assets/css/Highlight.css";
+import highBg from "../assets/img/highlight-img.jpeg"; // your background image
+import heroImg from "../assets/img/hero-img.jpg";
+import { Padding } from "@mui/icons-material";
+
+const BGHero = () => {
+    return (
+        <>
+
+            <section className="hero d-flex align-items-center text-white" id="home">
+      <div className="container text-center text-lg-start">
+        <div className="row align-items-center">
+          <div className="col-lg-6 col-md-12 hero-text pt-0" >
+            <h1 className="display-4 fw-bold mb-3">
+              Timeless Elegance for Modern You
+            </h1>
+            <p className="lead mb-4">
+              Discover craftsmanship and precision in every tick. Our watches
+              redefine sophistication with enduring style and unmatched quality.
+            </p>
+            
+            <button className="luxury-btn">Explore</button>
+
+          </div>
+          <div className="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+            <img
+              src={heroImg}
+              alt="Luxury Watch"
+              className="img-fluid hero-watch"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+            {/* <section
+                className="bg-hero-section"
+                style={{ backgroundImage: `url(${highBg})` }}
+            >
+                <div className="bg-hero-overlay">
+                    <div className="container">
+                        <div className="content-box">
+                            <h1 className="hero-title">Discover Timeless Luxury</h1>
+                            <p className="hero-subtitle">
+                                Precision engineering meets iconic craftsmanship.
+                            </p>
+
+                            <button className="hero-btn">Explore Collection</button>
+                        </div>
+                    </div>
+                </div>
+            </section> */}
+
+            <section className="container-fluid" >
+                <div className="row">
+                    <div className="col why-choose-section">
+                        <div className="overlay">
+                            <h2>Why Choose Us</h2>
+                            <p className="sub-text">
+                                Precision. Craftsmanship. Timeless Elegance.
+                            </p>
+
+                            <ul className="benefits">
+                                <li>✔ Swiss-Inspired Precision Engineering</li>
+                                <li>✔ Premium Sapphire Crystal Glass</li>
+                                <li>✔ 5-Year Warranty & Lifetime Service Support</li>
+                                <li>✔ Luxury Design Built for Everyday Wear</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col why-choose-section">
+                        <div className="multi-img">
+                            <img src={heroImg} alt="" className="img-fluid"/>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </>
+
+    );
+};
+
+export default BGHero;

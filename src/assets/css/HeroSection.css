@@ -8,9 +8,15 @@
 }
 
 .hero-text h1 {
-  color: #ffffff;
+  /* color: #ffffff; */
   letter-spacing: 1px;
   padding-top: 60px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #d4af37, #f8e7b5, #d4af37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 3px;
 }
 
 .hero-text p {
