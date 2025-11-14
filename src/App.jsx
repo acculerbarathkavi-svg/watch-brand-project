@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 import HeroSection from "./components/HeroSection";
 import About from "./components/About"
 import ProductSection from './components/Product';
-
+import Footer from './components/Footer';
 
 function App() {
   
@@ -15,6 +15,7 @@ function App() {
       <HeroSection/>
       <About/>
       <ProductSection/>
+      <Footer/>
     </>
   )
 }
