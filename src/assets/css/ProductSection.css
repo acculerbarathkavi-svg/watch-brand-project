@@ -5,9 +5,18 @@
 }
 
 .section-title {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem;
+  font-weight: 700; */
+  /* color: #e4ad3f; */
+  /* background: -webkit-linear-gradient(red, blue); /* Example gradient */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent */
+   font-size: 2.5rem;
   font-weight: 700;
-  color: #d4af37;
+  background: linear-gradient(90deg, #d4af37, #f8e7b5, #d4af37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 3px;
 }
 
 .section-subtitle {
