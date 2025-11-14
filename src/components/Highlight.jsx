@@ -2,6 +2,8 @@ import React from "react";
 import "../assets/css/Highlight.css";
 import highBg from "../assets/img/highlight-img.jpeg"; // your background image
 import heroImg from "../assets/img/hero-img.jpg";
+import watchImg from "../assets/img/watch4.jpg";
+
 import { Padding } from "@mui/icons-material";
 
 const BGHero = () => {
@@ -71,7 +73,7 @@ const BGHero = () => {
                     </div>
                     <div className="col why-choose-section">
                         <div className="multi-img">
-                            <img src={heroImg} alt="" className="img-fluid"/>
+                            <img src={watchImg} alt="" className="high-img img-fluid"/>
                         </div>
                     </div>
                 </div>
