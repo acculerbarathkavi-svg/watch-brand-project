@@ -30,7 +30,7 @@ const HeroSection = () => {
     //     </div>
     //   </div>
     // </section>
-    <section
+    <section id="home"
                     className="bg-hero-section"
                     style={{ backgroundImage: `url(${highBg})` }}
                 >

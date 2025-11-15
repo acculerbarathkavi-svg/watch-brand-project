@@ -50,8 +50,13 @@
                 </a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link text-white" href="#services">
-                  Services
+                <a className="nav-link text-white" href="#Benefits">
+                  Benefits
+                </a>
+              </li>
+              <li className="nav-item mx-2">
+                <a className="nav-link text-white" href="#price">
+                  Prices
                 </a>
               </li>
               <li className="nav-item ms-lg-3 mt-3 mt-lg-0">

@@ -10,7 +10,7 @@ const BGHero = () => {
     return (
         <>
 
-            <section className="hero d-flex align-items-center text-white" id="home">
+            <section className="hero d-flex align-items-center text-white" id="products">
       <div className="container text-center text-lg-start">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-12 hero-text pt-0" >
@@ -54,7 +54,7 @@ const BGHero = () => {
                 </div>
             </section> */}
 
-            <section className="container-fluid" >
+            {/* <section className="container-fluid" >
                 <div className="row">
                     <div className="col why-choose-section">
                         <div className="overlay">
@@ -78,7 +78,7 @@ const BGHero = () => {
                     </div>
                 </div>
 
-            </section>
+            </section> */}
 
         </>
 
