@@ -36,7 +36,10 @@ const HeroSection = () => {
                 >
                     <div className="bg-hero-overlay">
                         <div className="container">
-                            <div className="content-box">
+                            <div className="content-box"
+                            data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
                                 <h1 className="hero-title">Discover Timeless Luxury</h1>
                                 <p className="hero-subtitle">
                                     Precision engineering meets iconic craftsmanship.

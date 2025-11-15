@@ -6,7 +6,7 @@ import aboutImg from "../assets/img/about-img.jpg";
 const AboutSection = () => {
   return (
     <section className="about-modern text-white" id="about">
-      <div className="container text-center">
+      <div className="container text-center" >
 
         {/* Heading */}
         <motion.h2
@@ -16,7 +16,7 @@ const AboutSection = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-        <div className="divider mx-auto mb-3"></div>
+        <div className="divider mx-auto mb-3" data-aos="fade-up"></div>
           Precision Meets Perfection
         </motion.h2>
 

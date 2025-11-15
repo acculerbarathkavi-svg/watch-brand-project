@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/css/Highlight.css";
-import highBg from "../assets/img/highlight-img.jpeg"; // your background image
+import highBg from "../assets/img/highlight-img.jpeg"; 
 import heroImg from "../assets/img/hero-img.jpg";
 import watchImg from "../assets/img/watch4.jpg";
 
