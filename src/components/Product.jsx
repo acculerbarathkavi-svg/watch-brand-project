@@ -13,28 +13,54 @@ const ProductSection = () => {
 
   return (
     <section className="product-section py-5" id="price">
-      <div className="container text-center" >
-        <h2 className="section-title" style={{paddingTop:"57px"}}>Trending Now</h2>
-        <p className="section-subtitle">
-          Discover our latest luxury timepieces designed for elegance, precision, and performance.
-        </p>
+  <div className="container text-center">
 
-        <div className="row justify-content-center mt-5">
-          {products.map((product) => (
-            <div key={product.id} className="col-md-4 col-sm-6 mb-5">
-              <div className="product-card">
-                <div className="product-img-wrapper">
-                  <img src={product.img} alt={product.name} className="product-img img-fluid" />
-                </div>
-                <h5 className="product-name mt-3">{product.name}</h5>
-                <p className="product-price">{product.price}</p>
-                <button className="product-btn">Add To Cart</button>
-              </div>
+    <h2
+      className="section-title"
+      style={{ paddingTop: "57px" }}
+      data-aos="fade-up"
+      data-aos-duration="1200"
+    >
+      Trending Now
+    </h2>
+
+    <p
+      className="section-subtitle"
+      data-aos="fade-up"
+      data-aos-delay="200"
+      data-aos-duration="1200"
+    >
+      Discover our latest luxury timepieces designed for elegance, precision, and performance.
+    </p>
+
+    <div className="row justify-content-center mt-5">
+      {products.map((product, index) => (
+        <div
+          key={product.id}
+          className="col-md-4 col-sm-6 mb-5"
+          data-aos="zoom-in"
+          data-aos-delay={index * 200} 
+          data-aos-duration="1200"
+        >
+          <div className="product-card">
+            <div className="product-img-wrapper">
+              <img
+                src={product.img}
+                alt={product.name}
+                className="product-img img-fluid"
+              />
             </div>
-          ))}
+
+            <h5 className="product-name mt-3">{product.name}</h5>
+            <p className="product-price">{product.price}</p>
+            <button className="product-btn">Add To Cart</button>
+          </div>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
+
   );
 };
 

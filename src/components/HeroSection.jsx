@@ -30,26 +30,46 @@ const HeroSection = () => {
     //     </div>
     //   </div>
     // </section>
-    <section id="home"
-                    className="bg-hero-section"
-                    style={{ backgroundImage: `url(${highBg})` }}
-                >
-                    <div className="bg-hero-overlay">
-                        <div className="container">
-                            <div className="content-box"
-                            data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
-                                <h1 className="hero-title">Discover Timeless Luxury</h1>
-                                <p className="hero-subtitle">
-                                    Precision engineering meets iconic craftsmanship.
-                                </p>
-    
-                                <button className="hero-btn">Explore Collection</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+    <section
+  id="home"
+  className="bg-hero-section"
+  style={{ backgroundImage: `url(${highBg})` }}
+>
+  <div className="bg-hero-overlay">
+    <div className="container">
+      <div className="content-box">
+
+        <h1
+          className="hero-title"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          Discover Timeless Luxury
+        </h1>
+
+        <p
+          className="hero-subtitle"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1200"
+        >
+          Precision engineering meets iconic craftsmanship.
+        </p>
+
+        <button
+          className="hero-btn"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+          data-aos-duration="1200"
+        >
+          Explore Collection
+        </button>
+
+      </div>
+    </div>
+  </div>
+</section>
+
   );
 };
 
