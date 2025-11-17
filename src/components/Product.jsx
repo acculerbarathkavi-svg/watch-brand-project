@@ -6,9 +6,9 @@ import watch3 from "../assets/img/watch3.jpg";
 
 const ProductSection = () => {
   const products = [
-    { id: 1, name: "Midnight Pulse", price: "$275.00", img: watch1 },
-    { id: 2, name: "Solstice Infinity", price: "$375.00", img: watch2 },
-    { id: 3, name: "Aurora Chrono", price: "$300.00", img: watch3 },
+    { id: 1, name: "Midnight Pulse", price: "₹56,890", img: watch1 },
+    { id: 2, name: "Solstice Infinity", price: "₹88,069", img: watch2 },
+    { id: 3, name: "Aurora Chrono", price: "₹24,224", img: watch3 },
   ];
 
   return (
@@ -65,3 +65,42 @@ const ProductSection = () => {
 };
 
 export default ProductSection;
+
+
+// import React from "react";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Autoplay } from "swiper/modules";
+
+// // Swiper styles
+// import "swiper/css";
+
+// const Product = () => {
+//   return (
+//     <div style={{ width: "100%", maxWidth: "600px", margin: "0 auto" }}>
+//       <Swiper
+//         modules={[Autoplay]}
+//         autoplay={{
+//           delay: 2000,
+//           disableOnInteraction: false,
+//         }}
+//         loop={true}
+//         slidesPerView={1}
+//         spaceBetween={20}
+//       >
+//         <SwiperSlide>
+//           <img src="/img/watch1.jpg" alt="watch1" />
+//         </SwiperSlide>
+
+//         <SwiperSlide>
+//           <img src="/img/watch2.jpg" alt="watch2" />
+//         </SwiperSlide>
+
+//         <SwiperSlide>
+//           <img src="/img/watch3.jpg" alt="watch3" />
+//         </SwiperSlide>
+//       </Swiper>
+//     </div>
+//   );
+// };
+
+// export default Product;

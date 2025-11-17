@@ -25,8 +25,8 @@ function App() {
     <>
       <Navbar/>
       <HeroSection/>
-      <About/>
       <Highlight/>
+      <About/>
       <Benefits/>
       <ProductSection/>
       <Testimonials/>

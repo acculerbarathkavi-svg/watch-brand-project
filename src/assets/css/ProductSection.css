@@ -11,9 +11,10 @@
   /* background: -webkit-linear-gradient(red, blue); /* Example gradient */
   /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent */
-   font-size: 2.5rem;
+   font-size: 2.5rem;   
   font-weight: 700;
   background: linear-gradient(90deg, #d4af37, #f8e7b5, #d4af37);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 3px;
@@ -92,3 +93,38 @@
   }
 }
 /*button animation*/
+
+
+/* Swiper basic styles to ensure it displays & slides */
+.carousel-wrapper {
+  padding: 10px 0 40px;
+}
+
+/* center and size slide cards */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* make sure images don't collapse the slide */
+.product-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* gold arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #d4af37 !important;
+  top: 45% !important;
+}
+
+/* ensure nav buttons are visible over dark background */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 22px;
+  opacity: 1;
+}
+
