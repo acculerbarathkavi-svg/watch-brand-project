@@ -31,7 +31,7 @@ const FAQSection = () => {
     <section className="faq-section py-5">
       <div className="container text-center">
         <h2 className="faq-title">FAQ</h2>
-        <h3 className="faq-subtitle">About Our Watches</h3>
+        <h3 className="faq-subtitle" >About Our Watches</h3>
 
         <div className="faq-container">
           {faqData.map((item, index) => (
