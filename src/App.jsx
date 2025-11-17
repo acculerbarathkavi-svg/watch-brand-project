@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Highlight from './components/Highlight';
 import Benefits from './components/Benefits';
 import Testimonials from './components/Testimonials';
+import FAQ from './components/FAQ'
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -30,6 +31,7 @@ function App() {
       <Benefits/>
       <ProductSection/>
       <Testimonials/>
+      <FAQ/>
       <Footer/>
     </>
   )

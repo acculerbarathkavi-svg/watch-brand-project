@@ -40,7 +40,7 @@ const ProductSection = () => {
           className="col-md-4 col-sm-6 mb-5"
           data-aos="zoom-in"
           data-aos-delay={index * 200} 
-          data-aos-duration="1200"
+          data-aos-duration="1000"
         >
           <div className="product-card">
             <div className="product-img-wrapper">
