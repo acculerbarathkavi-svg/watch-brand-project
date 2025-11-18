@@ -19,7 +19,7 @@ const ContactSection = () => {
           {/* Left Side - Info */}
 <div className="contact-info">
   <h3>Get in Touch</h3>
-  <p>Feel free to reach out for support, product info, or custom watch requests.</p>
+  <p>Feel free to reach out for support, product info, <br /> or custom watch requests.</p>
 
   <div className="info-item">
     <FaMapMarkerAlt className="icon" />

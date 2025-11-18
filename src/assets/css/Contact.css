@@ -33,6 +33,7 @@
 .contact-info {
   flex: 1;
   text-align: left;
+  
 }
 
 .contact-info h3 {
@@ -47,6 +48,7 @@
   margin-bottom: 15px;
   font-size: 1.1rem;
   color: #ccc;
+  
 }
 
 .info-item span {
