@@ -16,9 +16,9 @@
 .faq-subtitle {
   margin-top: 10px;
   font-size: 1.2rem;
-  color: #f6c34c;
+  color: #e6c77d;
   font-weight: 600;
-  font-style: italic;
+  
 }
 
 .faq-container {
@@ -43,7 +43,7 @@
 }
 
 .faq-question:hover {
-  color: #d4af37;
+  color: #e6c77d;
 }
 
 .faq-icon {
