@@ -4,12 +4,14 @@ import highBg from "../assets/img/highlight-img.jpeg";
 import heroImg from "../assets/img/hero-img.jpg";
 import watchImg from "../assets/img/watch4.jpg";
 
-
+// Valid MUI icon imports
 import StarIcon from "@mui/icons-material/Star";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import WatchIcon from "@mui/icons-material/Watch";
 
-import { Padding } from "@mui/icons-material";
+// ❌ REMOVE this — it breaks the Netlify build
+// import { Padding } from "@mui/icons-material";
+
 
 const BGHero = () => {
     return (
