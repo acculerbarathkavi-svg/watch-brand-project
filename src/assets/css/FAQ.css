@@ -81,3 +81,56 @@
     font-size: 1rem;
   }
 }
+
+
+/* FAQ Two Column Layout */
+.faq-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+/* LEFT FAQ */
+.faq-left {
+  flex: 1;
+}
+
+/* RIGHT IMAGE */
+.faq-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.faq-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  border: 2px solid rgba(212, 175, 55, 0.4);
+  transition: 0.3s ease;
+}
+
+.faq-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+}
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+  .faq-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .faq-right {
+    margin-top: 30px;
+  }
+
+  .faq-left {
+    text-align: left;
+  }
+}

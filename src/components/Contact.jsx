@@ -15,27 +15,7 @@ const ContactSection = () => {
 
         <div className="contact-wrapper">
 
-          {/* Left Side - Info */}
-          {/* <div className="contact-info">
-            <h3>Get in Touch</h3>
-            <p>Feel free to reach out for support, product info, or custom watch requests.</p>
-
-            <div className="info-item">
-              <span>📍</span>
-              <p>Coimbatore, India</p>
-            </div>
-
-            <div className="info-item">
-              <span>📞</span>
-              <p>+91 98765 43210</p>
-            </div>
-
-            <div className="info-item">
-              <span>✉️</span>
-              <p>support@luxtime.com</p>
-            </div>
-          </div> */}
-
+         
           {/* Left Side - Info */}
 <div className="contact-info">
   <h3>Get in Touch</h3>
