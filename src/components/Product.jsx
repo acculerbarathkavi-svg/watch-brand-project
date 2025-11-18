@@ -330,7 +330,7 @@ const WatchCarousel = () => {
   ];
 
   return (
-    <div className="watch-section">
+    <div className="watch-section " id="price">
       <div className="container my-5">
         <h2 className="text-center mb-4 watch-title">Our Premium Watches</h2>
 
