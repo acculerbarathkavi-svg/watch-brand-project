@@ -87,7 +87,8 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 18px;
+  width: 15px;
+  
 }
 
 /* Track */

@@ -29,7 +29,7 @@ function App() {
     // Fake loading time (2 seconds)
     setTimeout(() => {
       setLoading(false);
-    }, 1200);
+    }, 2000);
   }, []);
 
   if (loading) {
